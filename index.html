@@ -1,17 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Matt Roundy Portfolio</title>
         <link rel="stylesheet" href="./site.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
-    <body>
-        <main>
-            <h1>Welcome to My Website</h1>  
-        </main>
 
+    <body>
+        <header id="page-header">
+            <h1 class="my-3 mx-4">Matthew Roundy: Portfolio</h1>
+        </header>
+
+        <section id="project-banner">
+            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner bg-light">
+
+                    <div id="project-1-banner" class="carousel-item active">
+                        <div class="d-flex justify-content-center align-items-center p-5" style="height: 400px;">
+                            <div class="text-center text-light">
+                                <h3>Game Development</h3>
+                                <p>Created fully-featured, playable video game, refining skills and providing post-release updates</p>
+                                <a href="#project1-details" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="project-2-banner" class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center p-5" style="height: 400px;">
+                            <div class="text-center text-light">
+                                <h3>Consistxels</h3>
+                                <p>Created a program to assist with sprite art creation, and released it for public use</p>
+                                <a href="#project2-details" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="project-3-banner" class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center p-5" style="height: 400px;">
+                            <div class="text-center text-light">
+                                <h3>College Projects</h3>
+                                <p>Worked with other students to create functional, professional-looking projects</p>
+                                <a href="#project3-details" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+        </section>
+
+        <!-- about me section -->
+        <section id="aboutme" class="mt-4 mb-2 px-4">
+            <h1>About Me</h1>
+            <p>My name is Matthew Roundy. I am a programmer and occasional artist. This is a portfolio of several projects I've worked on, both academic and personal.</p>
+            <!-- stuff I value? personal life? -->
+            <p>I got my start putting together games in Scratch back in middle school. Since then, I've spent years cultivating my skills in the field Computer Science. Languages I know include C, C++, C#, Python, Java, JavaScript, HTML, SQL, and more.</p>
+            <p>Due to my focus in game development and pixel / sprite artwork, I have an eye for design. I always prioritize the user's experience, making sure functionality and aesthetics work hand-in-hand to ensure that any user will be able to intuitively understand and make use of my software.</p>
+
+            <h6>Credentials:</h6>
+            <ul>
+                <li>Bachelor's Degree: Applied Science (Double Check!!!) <span class="fw-light">(2025, Weber State University - assuming all goes well! Fingers crossed.)</span></li>
+                <li>Certificate of Proficiency: Game Development <span class="fw-light">(2024, Weber State University)</span></li>
+            </ul>
+
+            <p>GitHub: <a href="https://github.com/MetroidSlayer">MetroidSlayer</a></p>
+            <p>LinkedIn: (Don't have one yet! Will make one soon.)</p>
+        </section>
+
+
+        <!-- individual sections -->
+        <div class="p-4 pb-0">
+            <hr>
+            <h1 class="my-4">Projects</h1>
+            <hr>
+
+            <!-- game dev -->
+            <section id="project1-details" class="mt-3 mb-5">
+                <!-- header -->
+                <h2>Game Development: "mARS"</h2>
+
+                <div class="d-flex">
+                    <!-- left side: description -->
+                    <div class="col-8 pe-4">
+                        <p>As a hobby, I took up game development. This led me to refining my CS skills, and taught me valuable lessons on what it means to create, maintain, and publish code to the Internet. The game is based on "Balloon in a Wasteland", an old game made in Flash, a tool mostly used to make web games in the early 2010's. I adored this game and its basic ideas, but was always frustrated by its shallow mechanics and short runtime. I took it upon myself to do the idea justice, and created this game: "mARS"</p>
+                        <p>The concept of "mARS" is simple. You play as an astronaut that must escape after crashing on the surface of Mars. You fight off aliens, upgrade your equipment and shelter, and repair your ship.</p>
+                        <p>The game's design, however, is pretty complex. Repairs and equipment pull from the same pool of materials, which are obtained by defeating enemies; it's up to the player to decide whether to spend their resources on escape, or to sure up their defenses so that they can survive another day. More importantly, the player must also track time. Every event is tracked and determined by a constantly-progressing day-night cycle, and repairs take a while. Will they spend their valuable time trading with shopkeepers, resting up to avoid exhaustion? Buckling down and fixing the ship instead might seem valuable, but what happens when enemies attack your ship and your hard work is reversed?</p>
+                        <p>"mARS" was made in Godot 3, an open-source engine that's constantly updated and maintained. Working with open-source tools is sometimes difficult; it holds your hand less than something like Unity. In my opinion, though, that allows for much more creative freedom, and leads to much more resourceful problem-solving. Something critical I learned from making this game was the importance of bug-testing and providing updates to users. The (CONTINUE THIS)</p>
+
+                        <p>The game can be downloaded, or the game's page viewed in more detail, using the embed on the right. I created this game before I learned how to use GitHub, so I <strong>don't have a repository for it</strong>, but I <strong>can provide source code</strong> upon request.</p>
+                    </div>
+
+                    <!-- right side: embed, video -->
+                    <div class="col-4">
+                        <h5>View more info here</h5>
+                        <iframe frameborder="0" src="https://itch.io/embed/1527611?bg_color=ffeabd&amp;fg_color=000000&amp;link_color=00bfbe&amp;border_color=ba5e23"width="552" height="167">
+                            <a href="https://matt-roundy.itch.io/mars-advance-repair-survive">mARS by Matt Roundy</a>
+                        </iframe>
+                        
+                        <h5>Trailer</h5>
+                        <!-- there's some kinda issue with this. not sure what it is. apparently it might just resolve itself? -->
+                        <iframe width=100% height="315" src="https://www.youtube.com/embed/k68x3Qj5iRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+                <!-- bottom: screenshots -->
+                <h5>Screenshots</h5>
+                <div class="row">
+                    <img class="col" src="imgs/project1/mars_gameplay.png" alt="Gameplay of mARS">
+                    <img class="col" src="imgs/project1/mars_titlescreen.png" alt="mARS's title screen">
+                    <img class="col" src="imgs/project1/mars_vendor.png" alt="The player speaking to a vendor in mARS">
+                </div>
+
+            </section>
+
+            <hr>
+
+            <!-- cxls -->
+            <section id="project2-details" class="mt-3 mb-5">
+                <!-- header -->
+                <h2>Consistxels</h2>
+
+                <div class="d-flex">
+                    <!-- left side: description -->
+                    <div class="col-8 pe-4">
+                        <p>As I learned game development, I also took up pixel art out of necessity. I ended up finding it just as enjoyable as creating the code for my games, sometimes even more. I eventually took it up as a separate hobby, but discovered over time that it was very tedious.</p>
+                        <p>On large sprite sheets, a lot of sprites will share certain aspects, often using nearly-identical artwork except for minor changes. When one is changed, every single similar sprite also needs to be updated. This doesn't sound too bad, but when there are 700 sprites on a sheet, each separated into 10 different layers, consistency becomes almost impossible. Poring over these thousands of tiny images, making sure any duplicates are up-to-date, takes hours; occasionally, I'd spend a vast majority of my time scrutinizing and copy-pasting my work, rather than actually drawing new sprites.</p>
+                        <p>Frustrated, I designed Consistxels, a program written in Python that makes consistency easy (or at least easier)! First, the user inputs their sprite sheet, identifying separate layers and selecting various options. The program then runs through every single layer, detecting whether certain bits of artwork are identical. After this, the user can easily carry minor changes in one sprite over to similar sprites. I've even implemented ways to interface with existing popular art programs such as PhotoShop and Aseprite, streamlining things even further. If possible, I want to eliminate any and all disruptions in the process, leaving only the creative outlet remaining.</p>
+                        <p>This is a project I'm very excited about! I believe it could help sprite artists become far more efficient. I plan on working on it extensively over the next year or so. I haven't been able to do so recently, due to my schedule becoming overloaded during my final semester at WSU, but I have plenty of ideas for what to do next.</p>
+
+                    </div>
+
+                    <!-- right side: links, video -->
+                    <div class="col-4">
+                        <!-- github links -->
+                        <h5>GitHub Links</h5>
+                        <h6><a href="https://github.com/MetroidSlayer/Consistxels">Repository</a></h6>
+                        <h6><a href="https://github.com/MetroidSlayer/Consistxels/releases">Releases</a></h6>
+
+                        <!-- tutorial videos -->
+                        <h5>Tutorials</h5>
+                        <iframe width=100% height="315" src="https://www.youtube.com/embed/fnl0EclJATg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p><a href="https://www.youtube.com/playlist?list=PLUqkVRqogXgFU8ffQ7MntZ9ZZrrjmF5MM">More video tutorials</a></p>
+                        <p><a href="https://github.com/MetroidSlayer/Consistxels/blob/main/tutorials/tutorial_intro.md">Written tutorials</a></p>
+                    </div>
+                </div>
+                
+                <!-- bottom: screenshots -->
+                <h5>Screenshots</h5>
+                <div class="row" style="max-width: 100%;">
+                    <img class="col-auto" style="max-height: 38vh;" src="imgs/project2/cxls_mainmenu.png" alt="Main menu of Consistxels">
+                    <img class="col-auto" style="max-height: 38vh;" src="imgs/project2/cxls_layerselect.png" alt="Layer selection menu of Consistxels">
+                    <img class="col-auto" style="max-height: 38vh;" src="imgs/project2/cxls_exportsheet.png" alt="Export menu of Consistxels">
+                </div>
+
+            </section>
+
+            <hr>
+
+            <!-- college -->
+            <section id="project3-details" class="mt-3 mb-5">
+                <!-- header -->
+                <h2>College Projects</h2>
+
+                <div class="d-flex">
+                    <!-- left side: description -->
+                    <div class="col-8 pe-4">
+                        <p>Over the course of my education, I've had the opportunity to work with students and faculty on major projects. I took the role of a developer, tester, and client liaison. I frequently worked alongside teammates, taking leadership roles and directing our efforts as we progressed.</p>
+                        <p>One major project I worked on was training software for Weber State University's theater department, meant to teach new stage managers how to properly give commands from the (booth? what's it called?). In order to accomplish this, my teammates and I met with professors from both the Computer Science and theater programs in order to ensure that the final product would suit their needs. I don't believe this program is still in use, assuming it ever was, as (EXPLAIN BETTER)</p>
+                        <p>Another major project was my capstone course's final project. Alongside 9 other students, we worked with a client from the Desert Eagle RV Park, located in Nellis Air Force Base in Nevada, to create a website that would allow customers to reserve sites in the park. To do so, we inherited code from another team that hadn't managed to finish the site to the client's satisfaction. We worked together, cleaned it up, and added features, keeping in communication with the client and professor as we went. (As of writing this, we're not quite done! However, once we are, I'll update this section to include notes about the client's satisfaction with the final result.)</p>
+
+                        <!-- greater focus on gamedev classes in general -->
+                        <!-- primarily focus on client and team work after that -->
+
+                        
+                    </div>
+
+                    <!-- right side: links -->
+                    <div class="col-4">
+                        <h5>RV Park Site Link</h5>
+                        <p class="my-0">(This is the live site link used for testing, but if/when Nellis sets up an official site, I'll change this link to that one.)</p>
+                        <a href="http://iamgreenie-001-site4.mtempurl.com/">http://iamgreenie-001-site4.mtempurl.com/</a>
+
+                        <!-- download for rollaball? idk -->
+                        <!-- download for theater program? is that proprietary work? -->
+                    </div>
+
+                </div>
+                
+                <!-- bottom: screenshots -->
+                <h5>Screenshots</h5>
+                <div class="row">
+                    <img class="col" src="imgs/project3/college_rollaball.png" alt="A screenshot of a basic 3D platformer where the player controls a ball">
+                    <img class="col" src="imgs/project3/college_theater.png" alt="A screenshot of the Unity developer environment for a theater project">
+                    <img class="col" src="imgs/project3/college_rvpark.png" alt="A screenshot of the RV Park site">
+                </div>
+
+            </section>
+
+            <hr>
+
+        </div>
+
+        <footer class="d-flex py-3 px-4">
+            <p class="fw-light">Created by Matt Roundy, 2025</p>            
+            <a class="ms-auto" href="#page-header">Scroll to top</a>
+        </footer>
+
+        <!-- are these supposed to go outside <body>? -->
         <script src="site.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
     </body>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #project-1-banner {
+            background-image: url("imgs/banner/project1_banner.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #project-2-banner {
+            background-image: url("imgs/banner/project2_banner.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #project-3-banner {
+            background-image: url("imgs/banner/project3_banner.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+
 </html>
