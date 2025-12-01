@@ -64,14 +64,16 @@
         <!-- about me section -->
         <section id="aboutme" class="mt-4 mb-2 px-4">
             <h1>About Me</h1>
-            <p>My name is Matthew Roundy. I am a programmer and occasional artist. This is a portfolio of several projects I've worked on, both academic and personal.</p>
-            <!-- stuff I value? personal life? -->
-            <p>I got my start putting together games in Scratch back in middle school. Since then, I've spent years cultivating my skills in the field Computer Science. Languages I know include C, C++, C#, Python, Java, JavaScript, HTML, SQL, and more.</p>
-            <p>Due to my focus in game development and pixel / sprite artwork, I have an eye for design. I always prioritize the user's experience, making sure functionality and aesthetics work hand-in-hand to ensure that any user will be able to intuitively understand and make use of my software.</p>
 
+            <p>My name is Matthew Roundy. I am a programmer and occasional artist. This is a portfolio of several projects I've worked on, both academic and personal.</p>
+            <p>For years, I've honed my skills as a programmer, getting my start all the way back in middle school. I really enjoy creating working, deliverable software; it's very fulfilling seeing a final product make users' lives better and/or easier. Languages I know include C, C++, C#, Python, Java, JavaScript, HTML, SQL, and more.</p>
+            <p>Due to my focus in game development and pixel / sprite artwork, I have an eye for design. I always prioritize the user's experience, making sure functionality and aesthetics work hand-in-hand to ensure that any user will be able to intuitively understand and make use of my software.</p>
+            <p>Throughout my education, I've had the opportunity to work alongside peers, faculty, and even clients. I've learned how to communicate, compromise, take the lead, and push myself and others to create powerful solutions that work for as many people as possible.</p>
+            
             <h6>Credentials:</h6>
+            
             <ul>
-                <li>Bachelor's Degree: Applied Science (Double Check!!!) <span class="fw-light">(2025, Weber State University - assuming all goes well! Fingers crossed.)</span></li>
+                <li>Bachelor of Science: Computer Science <span class="fw-light">(2025, Weber State University - assuming all goes well! Fingers crossed.)</span></li>
                 <li>Certificate of Proficiency: Game Development <span class="fw-light">(2024, Weber State University)</span></li>
             </ul>
 
@@ -94,12 +96,14 @@
                 <div class="d-flex">
                     <!-- left side: description -->
                     <div class="col-8 pe-4">
-                        <p>As a hobby, I took up game development. This led me to refining my CS skills, and taught me valuable lessons on what it means to create, maintain, and publish code to the Internet. The game is based on "Balloon in a Wasteland", an old game made in Flash, a tool mostly used to make web games in the early 2010's. I adored this game and its basic ideas, but was always frustrated by its shallow mechanics and short runtime. I took it upon myself to do the idea justice, and created this game: "mARS"</p>
-                        <p>The concept of "mARS" is simple. You play as an astronaut that must escape after crashing on the surface of Mars. You fight off aliens, upgrade your equipment and shelter, and repair your ship.</p>
-                        <p>The game's design, however, is pretty complex. Repairs and equipment pull from the same pool of materials, which are obtained by defeating enemies; it's up to the player to decide whether to spend their resources on escape, or to sure up their defenses so that they can survive another day. More importantly, the player must also track time. Every event is tracked and determined by a constantly-progressing day-night cycle, and repairs take a while. Will they spend their valuable time trading with shopkeepers, resting up to avoid exhaustion? Buckling down and fixing the ship instead might seem valuable, but what happens when enemies attack your ship and your hard work is reversed?</p>
-                        <p>"mARS" was made in Godot 3, an open-source engine that's constantly updated and maintained. Working with open-source tools is sometimes difficult; it holds your hand less than something like Unity. In my opinion, though, that allows for much more creative freedom, and leads to much more resourceful problem-solving. Something critical I learned from making this game was the importance of bug-testing and providing updates to users. The (CONTINUE THIS)</p>
-
-                        <p>The game can be downloaded, or the game's page viewed in more detail, using the embed on the right. I created this game before I learned how to use GitHub, so I <strong>don't have a repository for it</strong>, but I <strong>can provide source code</strong> upon request.</p>
+                        <p>I personally find the creative aspects of programming to be very enjoyable. It made sense to start doing it for fun. To do so, I started developing video games as a hobby. This led me to refining my CS skills, and taught me valuable lessons on what it means to create, maintain, and publish code to the Internet. I'm very grateful for this practical experience, as it's something I couldn't have learned from just getting my college degree.</p>
+                        <p>The game is based on "Balloon in a Wasteland", an old game made in Flash, a tool mostly used to make web games in the early 2010's. I adored this game and its basic ideas, but was always frustrated by its shallow mechanics and short runtime. I didn't think I could do better, necessarily, but I did believe that, with enough effort, I could turn the simple ideas and mechanics of the original game into something even more fun, dynamic, and challenging.</p>
+                        <p>Thus, "mARS" started development, releasing after about a year of work. The concept is simple: you play as an astronaut that must escape after crashing on the surface of Mars. You fight off aliens, upgrade your equipment and shelter, and repair your ship. The game's design, however, is pretty complex. Repairs and equipment pull from the same pool of materials, which are obtained by defeating enemies; it's up to the player to decide whether to spend their resources on escape, or to sure up their defenses so that they can survive another day. More importantly, the player must also track time, which they quickly discover is the most valuable resource they have.</p>
+                        <p>Every event is tracked and determined by a constantly-progressing day-night cycle, and repairs take a while. Game design is all about push-and-pull, risk vs. reward. Will they spend valuable time trading with shopkeepers or resting up, instead of repairing their ship? Can they be sure that all their time spent repairing wasn't better spent on setting up defenses, considering enemies could simply destroy the ship and reverse all their hard work? I don't want to sound cocky, but I'm very happy with the tense decision-making that "mARS" asks for.</p>
+                        <p>Combat is similarly tense, with different weapons having different ammo counters that the player must effectively track and manage. I'm also very pleased with the variability of gameplay: events and enemy spawns can be random, and there are a lot of different weapons with wildly different use cases and effects. Difficulty is also dynamic, increasing as time passes and as the player grows in strength. Every playthrough can be different, depending on what happens and what equipment is purchased.</p>
+                        <p>"mARS" was made in Godot 3, an open-source engine that's constantly updated and maintained. Working with open-source tools is sometimes difficult; it's often easier to mess up in ways that aren't easy to fix, as there aren't as many guardrails or rules to follow. However, because it holds your hand less in general, the solutions you come up with for problems can be much more resourceful, and are entirely unique to your own project. For this reason, I'm always going to prefer Godot to a more popular, more "advanced" engine like Unity, which can feel incredibly restrictive by comparison.</p>
+                        <p>Embarrassingly, the 1.0.0 release of the game had a critical bug where shopkeepers wouldn't appear, making the game impossible to complete, and even worse, incredibly boring. I only noticed the bug because I booted it up on a whim much, much later, intending to play through it myself. From this, I learned just how critical a thorough bug test is. I also learned the importance of being able to provide updates to users.</p>
+                        <p>Using the itch.io embed on the right, you can download it for yourself or view its own dedicated page. I created this game before I learned how to use GitHub, so I don't have a repository for it, but I can provide source code upon request.</p>
                     </div>
 
                     <!-- right side: embed, video -->
@@ -109,7 +113,7 @@
                             <a href="https://matt-roundy.itch.io/mars-advance-repair-survive">mARS by Matt Roundy</a>
                         </iframe>
                         
-                        <h5>Trailer</h5>
+                        <h5 class="mt-4">Trailer</h5>
                         <!-- there's some kinda issue with this. not sure what it is. apparently it might just resolve itself? -->
                         <iframe width=100% height="315" src="https://www.youtube.com/embed/k68x3Qj5iRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
@@ -136,10 +140,9 @@
                     <!-- left side: description -->
                     <div class="col-8 pe-4">
                         <p>As I learned game development, I also took up pixel art out of necessity. I ended up finding it just as enjoyable as creating the code for my games, sometimes even more. I eventually took it up as a separate hobby, but discovered over time that it was very tedious.</p>
-                        <p>On large sprite sheets, a lot of sprites will share certain aspects, often using nearly-identical artwork except for minor changes. When one is changed, every single similar sprite also needs to be updated. This doesn't sound too bad, but when there are 700 sprites on a sheet, each separated into 10 different layers, consistency becomes almost impossible. Poring over these thousands of tiny images, making sure any duplicates are up-to-date, takes hours; occasionally, I'd spend a vast majority of my time scrutinizing and copy-pasting my work, rather than actually drawing new sprites.</p>
-                        <p>Frustrated, I designed Consistxels, a program written in Python that makes consistency easy (or at least easier)! First, the user inputs their sprite sheet, identifying separate layers and selecting various options. The program then runs through every single layer, detecting whether certain bits of artwork are identical. After this, the user can easily carry minor changes in one sprite over to similar sprites. I've even implemented ways to interface with existing popular art programs such as PhotoShop and Aseprite, streamlining things even further. If possible, I want to eliminate any and all disruptions in the process, leaving only the creative outlet remaining.</p>
-                        <p>This is a project I'm very excited about! I believe it could help sprite artists become far more efficient. I plan on working on it extensively over the next year or so. I haven't been able to do so recently, due to my schedule becoming overloaded during my final semester at WSU, but I have plenty of ideas for what to do next.</p>
-
+                        <p>On large sprite sheets, a lot of sprites will share certain aspects, often using nearly-identical artwork except for minor changes. When one is changed, every single similar sprite also needs to be updated. This doesn't sound too bad, but when there are 700 sprites on a sheet, each separated into 10 different layers, consistency becomes almost impossible. Poring over these thousands of tiny images, making sure any duplicates are up-to-date, takes hours; I'd spend a vast majority of my time scrutinizing and copy-pasting my work, rather than actually drawing new sprites.</p>
+                        <p>Frustrated, I designed Consistxels, a program written in Python that makes consistency much easier! First, the user inputs their sprite sheet, identifying separate layers and selecting various options. The program then runs through every single layer, detecting whether certain bits of artwork are identical. After this, the user can easily carry minor changes in one sprite over to similar sprites. I've even implemented ways to interface with existing popular art programs, such as PhotoShop and Aseprite, streamlining things even further. If possible, I want to eliminate any and all speedbumps in the process, leaving only the creative outlet remaining.</p>
+                        <p>This is a project I'm very excited about! I believe it could help sprite artists become far more efficient. I plan on working on it more whenever I have free time to do so, adding new features and refining the workflow.</p>
                     </div>
 
                     <!-- right side: links, video -->
@@ -150,10 +153,10 @@
                         <h6><a href="https://github.com/MetroidSlayer/Consistxels/releases">Releases</a></h6>
 
                         <!-- tutorial videos -->
-                        <h5>Tutorials</h5>
+                        <h5 class="mt-4">Tutorials</h5>
                         <iframe width=100% height="315" src="https://www.youtube.com/embed/fnl0EclJATg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <p><a href="https://www.youtube.com/playlist?list=PLUqkVRqogXgFU8ffQ7MntZ9ZZrrjmF5MM">More video tutorials</a></p>
-                        <p><a href="https://github.com/MetroidSlayer/Consistxels/blob/main/tutorials/tutorial_intro.md">Written tutorials</a></p>
+                        <h6><a href="https://www.youtube.com/playlist?list=PLUqkVRqogXgFU8ffQ7MntZ9ZZrrjmF5MM">More video tutorials</a></h6>
+                        <h6><a href="https://github.com/MetroidSlayer/Consistxels/blob/main/tutorials/tutorial_intro.md">Written tutorials</a></h6>
                     </div>
                 </div>
                 
@@ -177,14 +180,11 @@
                 <div class="d-flex">
                     <!-- left side: description -->
                     <div class="col-8 pe-4">
-                        <p>Over the course of my education, I've had the opportunity to work with students and faculty on major projects. I took the role of a developer, tester, and client liaison. I frequently worked alongside teammates, taking leadership roles and directing our efforts as we progressed.</p>
-                        <p>One major project I worked on was training software for Weber State University's theater department, meant to teach new stage managers how to properly give commands from the (booth? what's it called?). In order to accomplish this, my teammates and I met with professors from both the Computer Science and theater programs in order to ensure that the final product would suit their needs. I don't believe this program is still in use, assuming it ever was, as (EXPLAIN BETTER)</p>
-                        <p>Another major project was my capstone course's final project. Alongside 9 other students, we worked with a client from the Desert Eagle RV Park, located in Nellis Air Force Base in Nevada, to create a website that would allow customers to reserve sites in the park. To do so, we inherited code from another team that hadn't managed to finish the site to the client's satisfaction. We worked together, cleaned it up, and added features, keeping in communication with the client and professor as we went. (As of writing this, we're not quite done! However, once we are, I'll update this section to include notes about the client's satisfaction with the final result.)</p>
-
-                        <!-- greater focus on gamedev classes in general -->
-                        <!-- primarily focus on client and team work after that -->
-
-                        
+                        <p>I took a few game development classes as electives during my college education, leading to the development of a few projects. Most were short demos where I had to follow a specific theme and work according to instructions given by professors. It was helpful to learn to deliver software according to specifications set by someone else, rather than just going off of what I wanted to create on a whim.</p>
+                        <p>One particularly interesting project was a training simulator for Weber State University's theater department, in which I had to work with other students to develop something they could use to train stage managers for their performances. We met with faculty from the theater department and worked hard, creating a program that allowed users to speak into a microphone to deliver vocal commands to behind-the-scenes crew in a mock stage play. As far as I know, the theater department never ended up using this software, but it was an interesting project nonetheless.</p>
+                        <p>Aside from these, there's the final "capstone" project I'm still currently working on. (After the semester wraps up, I'll rewrite mentions of this project to be past-tense, etc.) Together with 9 other students, we worked with a client from the Desert Eagle RV Park, located in Nellis Air Force Base in Nevada, to create a website that would allow customers to reserve sites in the park. It's an exciting project, as apparently, the client plans to use our work as their actual website.</p>
+                        <p>So far, this project has been difficult, to say the least. Another team of students was working on it before us, and we had our work cut out for us. This was a valuable experience for me. Up until this point, I'd essentially created every project I engaged with from scratch; this time, I had to look at and understand code that I didn't write, and implement solutions that not only solved bugs in the original code, but added new features in ways that meshed well with existing ones. This skill is something I know I'll need to rely on as I enter a well-established workforce, tackling codebases and projects that might have been in development for years before I ever see them.</p>
+                        <p>Due to both of these major projects, I've had experience in working with clients and collaborating closely with other programmers to create things that are useful, intuitive, and functional. I strive to follow client specifications and ask follow-up questions when necessary, making sure that what I'm creating is exactly what's being requested of me, and I always make sure to push my team to collaborate and communicate so that no detail, no matter how small, is neglected.</p>
                     </div>
 
                     <!-- right side: links -->
@@ -196,7 +196,6 @@
                         <!-- download for rollaball? idk -->
                         <!-- download for theater program? is that proprietary work? -->
                     </div>
-
                 </div>
                 
                 <!-- bottom: screenshots -->
